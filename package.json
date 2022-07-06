@@ -1,0 +1,45 @@
+{
+    "author": "sms77 e.K. <support@seven.io>",
+    "dependencies": {
+        "medusa-core-utils": "^1.1.31",
+        "medusa-test-utils": "^1.1.37",
+        "sms77-client": "^2.20.0"
+    },
+    "description": "seven plugin for Medusa.",
+    "devDependencies": {
+        "@babel/cli": "^7.7.5",
+        "@babel/core": "^7.7.5",
+        "@babel/node": "^7.7.4",
+        "@babel/plugin-proposal-class-properties": "^7.7.4",
+        "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+        "@babel/plugin-transform-classes": "^7.9.5",
+        "@babel/plugin-transform-instanceof": "^7.8.3",
+        "@babel/plugin-transform-runtime": "^7.7.6",
+        "@babel/preset-env": "^7.7.5",
+        "@babel/register": "^7.7.4",
+        "@babel/runtime": "^7.9.6",
+        "client-sessions": "^0.8.0",
+        "cross-env": "^5.2.1"
+    },
+    "keywords": [
+        "medusa",
+        "medusa-plugin",
+        "seven"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "name": "@seven.io/medusa",
+    "peerDependencies": {
+        "medusa-interfaces": "1.x"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/seven-io/medusa"
+    },
+    "scripts": {
+        "build": "babel src -d .",
+        "prepare": "cross-env NODE_ENV=production npm run build",
+        "watch": "babel -w src --out-dir ."
+    },
+    "version": "0.0.1"
+}
