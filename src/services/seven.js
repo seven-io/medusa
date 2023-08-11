@@ -1,5 +1,5 @@
 import {BaseService} from 'medusa-interfaces'
-import Sms77Client from 'sms77-client'
+import SevenClient from 'sms77-client'
 
 export default class SevenService extends BaseService {
     /**
@@ -11,7 +11,7 @@ export default class SevenService extends BaseService {
      *          from: "Medusa"
      *      },
      *      voice: {
-     *          from: "+491771783130"
+     *          from: "+49179876543210"
      *      }
      *    }
      */
@@ -20,7 +20,7 @@ export default class SevenService extends BaseService {
 
         this.options_ = options
 
-        this.client = new Sms77Client(options.apiKey, 'Medusa')
+        this.client = new SevenClient(options.apiKey, 'Medusa')
     }
 
     /**
