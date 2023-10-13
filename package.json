@@ -24,6 +24,7 @@
     "keywords": [
         "medusa",
         "medusa-plugin",
+        "medusa-plugin-notification",
         "seven"
     ],
     "license": "MIT",

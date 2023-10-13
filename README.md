@@ -27,7 +27,7 @@ file:
 const plugins = [
     //...
     {
-        resolve: '@seven/medusa',
+        resolve: '@seven.io/medusa',
         options: {
             apiKey: process.env.SEVEN_API_KEY,
             sms: {
